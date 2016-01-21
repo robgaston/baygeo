@@ -20,8 +20,7 @@ just a place to put our code for hack days -- get ready for FUN!
 requires [nodejs](https://nodejs.org/en/download/)
 
 ```sh
-npm install -g cordova
-npm install -g ios-sim
+npm install -g cordova ios-sim
 cd jan-16
 ./project.sh
 ```
