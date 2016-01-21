@@ -24,7 +24,7 @@ cd jan-16
 
 ### run
 
-(`<platform>` should be ios or android)
+(`<platform>` should be `ios` or `android`)
 
 ```sh
 cordova run <platform>
