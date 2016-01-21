@@ -17,14 +17,17 @@ just a place to put our code for hack days -- get ready for FUN!
 * integration: use mechanism built by back end team to display data on map
 
 ### setup
+requires [nodejs](https://nodejs.org/en/download/)
+
 ```sh
+npm install -g cordova
 cd jan-16
 ./project.sh
 ```
 
 ### run
 
-(`<platform>` should be `ios` or `android`)
+(`<platform>` should be `ios` or `android`. relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html))
 
 ```sh
 cordova run <platform>
