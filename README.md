@@ -19,6 +19,8 @@ just a place to put our code for hack days -- get ready for FUN!
 ### setup
 requires [nodejs](https://nodejs.org/en/download/)
 
+relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html)
+
 ```sh
 npm install -g cordova ios-sim
 cd jan-16
@@ -31,4 +33,4 @@ cd jan-16
 cordova run <platform>
 ```
 
-`<platform>` should be `ios` or `android`. relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html)
+`<platform>` should be `ios` or `android`
