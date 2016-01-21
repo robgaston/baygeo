@@ -4,7 +4,7 @@ just a place to put our code for hack days -- get ready for FUN! 👍
 
 ## jan '16
 
-### goals:
+### goals
 
 * create a small [cordova](https://cordova.apache.org/docs/en/latest/guide/overview/) app showing data from an [arches](https://github.com/archesproject/arches) instance on a map
 * two teams: front end & back end
