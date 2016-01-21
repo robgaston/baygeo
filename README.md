@@ -21,6 +21,7 @@ requires [nodejs](https://nodejs.org/en/download/)
 
 ```sh
 npm install -g cordova
+npm install -g ios-sim
 cd jan-16
 ./project.sh
 ```
