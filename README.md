@@ -1,6 +1,6 @@
-# fargeo hack days👍🏻
+# fargeo hack days
 
-just a place to put our code for hack days -- get ready for FUN!
+just a place to put our code for hack days -- get ready for FUN! 👍🏻
 
 ## jan '16
 
