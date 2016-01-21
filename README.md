@@ -6,7 +6,7 @@ just a place to put our code for hack days -- get ready for FUN!
 
 ### goals:
 
-* create a small [cordova](https://cordova.apache.org/docs/en/latest/guide/overview/) app showing data from an arches instance on a map
+* create a small [cordova](https://cordova.apache.org/docs/en/latest/guide/overview/) app showing data from an [arches](https://github.com/archesproject/arches) instance on a map
 * two teams: front end & back end
 * front end team
   * select libraries for achieving close to native mobile look & feel
