@@ -27,8 +27,8 @@ cd jan-16
 
 ### run
 
-(`<platform>` should be `ios` or `android`. relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html))
-
 ```sh
 cordova run <platform>
 ```
+
+`<platform>` should be `ios` or `android`. relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html)
