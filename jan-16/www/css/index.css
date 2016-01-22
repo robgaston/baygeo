@@ -70,9 +70,6 @@ body {
     position: fixed;
     top: 100%;
     margin-top: -65px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
 }
 
 .btn-nav {
@@ -83,6 +80,14 @@ body {
     margin: 6px 0 0 2px; 
     border: 1px solid #000; 
     border-radius: 2px;
+}
+
+.btn-nav:hover {
+    color: #f0f0f0;
+}
+
+.btn-nav:focus {
+    color: #f0f0f0;
 }
 
 h1 {
