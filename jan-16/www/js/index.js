@@ -17,6 +17,12 @@
  * under the License.
  */
 var app = {
+    project: {
+        name: 'historicplacesla',
+        url: 'http://historicplacesla.org/entities/',
+        mapExtent: []
+    },
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -33,38 +39,65 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
         app.sqlLiteSetup();
     },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    },
     sqlLiteSetup: function () {
         var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-        var sqlite = new SQLite('resources');
+        var sqlite = new SQLite('arches');
+        app.sqlite = sqlite;
 
         sqlite.open(function(err) {
           if (err) throw err;
-          sqlite.query('CREATE TABLE resources ( id INT PRIMARY KEY NOT NULL, name TEXT NOT NULL);', [], function(err, res) {
+          sqlite.query('CREATE TABLE resources ( resource_id TEXT PRIMARY KEY NOT NULL, json_string TEXT NOT NULL );', [], function(err, res) {
             if (err) throw err;
-            app.sqlite.query('insert into resources values (0,"a resource");', [], function(err, res) {
-              if (err) throw err;
-            });
+            app.addHplaResource('9add4f2c-362a-4547-bb4a-b150e8366ba6');
           });
         });
-
-        app.sqlite = sqlite;
+    },
+    addHplaResource: function(id) {
+        $.get(this.project.url + id, function (d) {
+        	console.log(d);
+            app.sqlite.query('insert into resources (resource_id, json_string) values (\'' + id + '\',\'' + d + '\');', [], function(err, res) {
+                if (err) throw err;
+            });
+        });
     },
     getResources: function (callback) {
         app.sqlite.query('select * from resources;', [], callback);
+    },
+    parseResources: function (resources) {
+        var parsedResources = [];
+        for (var i = 0; i < resources.length; i++) {
+            var resource = resources[i];
+            var jsonResource = JSON.parse(resource.json_string)
+            var names = app.getEntities(jsonResource, 'NAME.E41');
+            for (var i = 0; i < names.length; i++) {
+                names[i] = names[i].value;
+            }
+            var geometries = app.getEntities(jsonResource, 'SPATIAL_COORDINATES_GEOMETRY.E47');
+            for (var i = 0; i < geometries.length; i++) {
+                parsedResources.push({
+                    id: resource.resource_id,
+                    geom: geometries[i].value,
+                    name: names.join(', ')
+                });
+            }
+        }
+        return parsedResources;
+    },
+    getEntities(entity, type, list) {
+        if (!list) {
+            list = [];
+        }
+        for (var i = 0; i < entity.child_entities.length; i++) {
+            var child_entity = entity.child_entities[i];
+            if (child_entity.entitytypeid === type) {
+                list.push(child_entity);
+            }
+            app.getEntities(child_entity, type, list);
+        }
+        return list;
     }
 };
 
