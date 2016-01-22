@@ -22,7 +22,7 @@ map.addInteraction(featureSelect);
 featureSelect.on('select', function (e) {
     var features = e.target.getFeatures().getArray();
     if (features.length > 0) {
-        console.log(features[0].get('resource'));
+        document.location = 'resource_info.html?id=' + features[0].get('resource').id;
     }
 });
 
