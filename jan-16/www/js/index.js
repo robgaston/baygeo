@@ -34,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.sqlLiteSetup();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -52,11 +53,13 @@ var app = {
 
         sqlite.open(function(err) {
           if (err) throw err;
-          sqlite.query('SELECT ? + ? AS solution', [2, 3], function(err, res) {
+          sqlite.query('CREATE TABLE resources ( id INT PRIMARY KEY NOT NULL, name TEXT NOT NULL);', [], function(err, res) {
             if (err) throw err;
-            console.log(res.rows[0].solution);
+            console.log(res);
           });
         });
+
+        this.sqlite = sqlite;
     }
 };
 
