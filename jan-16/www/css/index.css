@@ -164,3 +164,10 @@ h1 {
     background: #fdfdfd;
 }
 
+
+input{
+    width: 100%; 
+    background: #3c4d5e; 
+    border-width: 0px; 
+    height: 25px; 
+}
