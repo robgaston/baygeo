@@ -55,11 +55,16 @@ var app = {
           if (err) throw err;
           sqlite.query('CREATE TABLE resources ( id INT PRIMARY KEY NOT NULL, name TEXT NOT NULL);', [], function(err, res) {
             if (err) throw err;
-            console.log(res);
+            app.sqlite.query('insert into resources values (0,"a resource");', [], function(err, res) {
+              if (err) throw err;
+            });
           });
         });
 
-        this.sqlite = sqlite;
+        app.sqlite = sqlite;
+    },
+    getResources: function (callback) {
+        app.sqlite.query('select * from resources;', [], callback);
     }
 };
 
