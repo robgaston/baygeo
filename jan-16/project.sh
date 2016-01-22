@@ -206,6 +206,9 @@ if [[ $init = 1 ]] || [[ $plugins = 1 ]] ; then
 	message_info "Adding Splashscreen Plugin..."
 	cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git
 
+    message_info "Adding Sqlite Plugin..."
+    cordova plugin add cordova-sqlite-plugin
+
 fi
 
 # ----
