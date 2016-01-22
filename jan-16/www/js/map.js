@@ -14,7 +14,9 @@ var map = new ol.Map({
     view: new ol.View({
         center: ol.proj.transform([-118.25,34.05], 'EPSG:4326', 'EPSG:3857'),
         zoom: 10
-    })
+    }),
+    loadTilesWhileAnimating: true,
+    loadTilesWhileInteracting: true,
 });
 
 document.addEventListener('deviceready', function () {
@@ -33,3 +35,44 @@ document.addEventListener('deviceready', function () {
       map.getView().fit(extent, map.getSize());
     });
 }, false);
+
+//Instantiate with some options and add the Control
+var geocoder = new Geocoder('mapzen', {
+  provider: 'pelias',
+  key: 'search-rW2yhe4',
+  lang: 'en',
+  placeholder: 'Search for ...',
+  limit: 5,
+  keepOpen: true
+});
+map.addControl(geocoder);
+
+//Listen when an address is chosen
+geocoder.on('addresschosen', function(evt){
+  var
+    feature = evt.feature,
+    coord = evt.coordinate,
+    address_html = feature.get('address_html')
+  ;
+  content.innerHTML = '<p>'+address_html+'</p>';
+  overlay.setPosition(coord);
+});
+
+/**
+* Popup
+**/
+var
+  container = doc.getElementById('popup'),
+  content = doc.getElementById('popup-content'),
+  closer = doc.getElementById('popup-closer'),
+  overlay = new ol.Overlay({
+    element: container,
+    offset: [0, -40]
+  })
+;
+closer.onclick = function() {
+  overlay.setPosition(undefined);
+  closer.blur();
+  return false;
+};
+map.addOverlay(overlay);

@@ -43,8 +43,8 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    
-    
+
+
     text-align:center;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
@@ -79,12 +79,12 @@ body {
 }
 
 .btn-nav {
-    background: #0E2031; 
-    color: #445769; 
-    height: 50px; 
-    width: 50px; 
-    margin: 6px 0 0 2px; 
-    border: 1px solid #000; 
+    background: #0E2031;
+    color: #445769;
+    height: 50px;
+    width: 50px;
+    margin: 6px 0 0 2px;
+    border: 1px solid #000;
     border-radius: 2px;
 }
 
@@ -129,13 +129,13 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
@@ -158,6 +158,55 @@ h1 {
   height: 100%;
 }
 
+.ol-control button{
+    background-color: rgba(40, 40, 40, 0.8) !important;
+}
+.ol-control button:hover{
+    background-color: rgba(40, 40, 40, 1) !important;
+}
+
+.ol-popup {
+    position: absolute;
+    min-width: 180px;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    bottom: 12px;
+    left: -50px;
+}
+.ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+.ol-popup-closer:after {
+    content: "✖";
+}
 
 //Arches classes
 .app-container {
@@ -166,8 +215,8 @@ h1 {
 
 
 input{
-    width: 100%; 
-    background: #3c4d5e; 
-    border-width: 0px; 
-    height: 25px; 
+    width: 100%;
+    background: #3c4d5e;
+    border-width: 0px;
+    height: 25px;
 }
