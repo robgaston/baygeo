@@ -56,7 +56,7 @@ var app = {
           if (err) throw err;
           sqlite.query('CREATE TABLE resources ( resource_id TEXT PRIMARY KEY NOT NULL, json_string TEXT NOT NULL );', [], function(err, res) {
             if (err) throw err;
-            console.log(res);
+            app.addHplaResource('9add4f2c-362a-4547-bb4a-b150e8366ba6');
           });
         });
     },
@@ -70,6 +70,39 @@ var app = {
     },
     getResources: function (callback) {
         app.sqlite.query('select * from resources;', [], callback);
+    },
+    parseResources: function (resources) {
+        var parsedResources = [];
+        for (var i = 0; i < resources.length; i++) {
+            var resource = resources[i];
+            var jsonResource = JSON.parse(resource.json_string)
+            var names = app.getEntities(jsonResource, 'NAME.E41');
+            for (var i = 0; i < names.length; i++) {
+                names[i] = names[i].value;
+            }
+            var geometries = app.getEntities(jsonResource, 'SPATIAL_COORDINATES_GEOMETRY.E47');
+            for (var i = 0; i < geometries.length; i++) {
+                parsedResources.push({
+                    id: resource.resource_id,
+                    geom: geometries[i].value,
+                    name: names.join(', ')
+                });
+            }
+        }
+        return parsedResources;
+    },
+    getEntities(entity, type, list) {
+        if (!list) {
+            list = [];
+        }
+        for (var i = 0; i < entity.child_entities.length; i++) {
+            var child_entity = entity.child_entities[i];
+            if (child_entity.entitytypeid === type) {
+                list.push(child_entity);
+            }
+            app.getEntities(child_entity, type, list);
+        }
+        return list;
     }
 };
 
