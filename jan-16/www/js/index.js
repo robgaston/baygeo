@@ -34,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.sqlLiteSetup();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,6 +46,20 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    sqlLiteSetup: function () {
+        var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
+        var sqlite = new SQLite('example');
+
+        sqlite.open(function(err) {
+          if (err) throw err;
+          sqlite.query('CREATE TABLE resources ( id INT PRIMARY KEY NOT NULL, name TEXT NOT NULL);', [], function(err, res) {
+            if (err) throw err;
+            console.log(res);
+          });
+        });
+
+        this.sqlite = sqlite;
     }
 };
 
