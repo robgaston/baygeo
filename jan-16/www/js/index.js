@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
 var app = {
     // Application Constructor
     initialize: function() {
@@ -45,6 +46,17 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    sqlLiteSetup: function () {
+        var sqlite = new SQLite('example');
+
+        sqlite.open(function(err) {
+          if (err) throw err;
+          sqlite.query('SELECT ? + ? AS solution', [2, 3], function(err, res) {
+            if (err) throw err;
+            console.log(res.rows[0].solution);
+          });
+        });
     }
 };
 
