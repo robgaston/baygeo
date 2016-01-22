@@ -17,6 +17,12 @@
  * under the License.
  */
 var app = {
+    project: {
+        name: 'historicplacesla',
+        url: 'http://historicplacesla.org/entities/',
+        mapExtent: []
+    },
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -50,7 +56,7 @@ var app = {
         });
     },
     addHplaResource: function(id) {
-        $.get('http://historicplacesla.org/entities/' + id, function (d) {
+        $.get(this.project.url + id, function (d) {
         	console.log(d);
             app.sqlite.query('insert into resources (resource_id, json_string) values (\'' + id + '\',\'' + d + '\');', [], function(err, res) {
                 if (err) throw err;
