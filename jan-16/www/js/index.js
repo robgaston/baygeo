@@ -49,7 +49,7 @@ var app = {
     },
     sqlLiteSetup: function () {
         var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-        var sqlite = new SQLite('example');
+        var sqlite = new SQLite('resources');
 
         sqlite.open(function(err) {
           if (err) throw err;
