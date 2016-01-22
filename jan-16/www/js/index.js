@@ -49,19 +49,25 @@ var app = {
     },
     sqlLiteSetup: function () {
         var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
-        var sqlite = new SQLite('resources');
+        var sqlite = new SQLite('arches');
 
         sqlite.open(function(err) {
           if (err) throw err;
-          sqlite.query('CREATE TABLE resources ( id INT PRIMARY KEY NOT NULL, name TEXT NOT NULL);', [], function(err, res) {
+          sqlite.query('CREATE TABLE resources ( resource_id TEXT PRIMARY KEY NOT NULL, json_string TEXT NOT NULL );', [], function(err, res) {
             if (err) throw err;
-            app.sqlite.query('insert into resources values (0,"a resource");', [], function(err, res) {
-              if (err) throw err;
-            });
+            console.log(res);
           });
         });
 
         app.sqlite = sqlite;
+    },
+    addHplaResource: function(id) {
+        $.get('http://historicplacesla.org/entities/' + id, function (d) {
+        	console.log(d);
+            app.sqlite.query('insert into resources (resource_id, json_string) values (\'' + id + '\',\'' + d + '\');', [], function(err, res) {
+                if (err) throw err;
+            });
+        });
     },
     getResources: function (callback) {
         app.sqlite.query('select * from resources;', [], callback);
