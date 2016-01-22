@@ -57,9 +57,19 @@ body {
 
 .app-header {
     padding: 20px 10px 20px 10px;
-    background: #155485;
+    background: #1C2F42;
     color: #fff;
     opacity: 0.8;
+}
+
+.app-footer-nav {
+    height: 65px;
+    width: 100%;
+    background: #1C2F42;
+    color: white;
+    position: fixed;
+    top: 100%;
+    margin-top: -65px;
 }
 
 h1 {
