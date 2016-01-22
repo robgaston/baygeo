@@ -86,7 +86,7 @@ var app = {
         }
         return parsedResources;
     },
-    getEntities(entity, type, list) {
+    getEntities: function(entity, type, list) {
         if (!list) {
             list = [];
         }
@@ -98,6 +98,34 @@ var app = {
             app.getEntities(child_entity, type, list);
         }
         return list;
+    },
+    updatePrimaryName: function (id, name) {
+        app.sqlite.query('select * from resources where resource_id="' + id +'";', [], function (err, res) {
+            if (err) throw err;
+            if (res.rows.length > 0) {
+                var resource = res.rows[0];
+                var jsonResource = JSON.parse(resource.json_string);
+                var names = app.getEntities(jsonResource, 'NAME.E41');
+                var primaryName;
+                for (var i = 0; i < names.length; i++) {
+                    for (var j = 0; j < names[i].child_entities.length; j++) {
+                        var child = names[i].child_entities[j];
+                        if (child.entitytypeid === "NAME_TYPE.E55" && child.label === "Primary") {
+                            primaryName = names[i]
+                        }
+                    }
+                }
+                if (primaryName) {
+                    primaryName.value = name;
+                    primaryName.label = primaryName.value;
+                    var stringResource = JSON.stringify(jsonResource);
+                    app.sqlite.query("update resources set json_string='" + stringResource + "' where resource_id='" + id + "';", [], function (err, res) {
+                        if (err) throw err;
+                        console.log('updated:',res);
+                    });
+                }
+            }
+        });
     }
 };
 
