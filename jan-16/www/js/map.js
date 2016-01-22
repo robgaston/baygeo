@@ -6,7 +6,7 @@ var map = new ol.Map({
         })
     ],
     view: new ol.View({
-        center: ol.proj.transform([-0.92, 52.96], 'EPSG:4326', 'EPSG:3857'),
-        zoom: 6
+        center: ol.proj.transform([-118.25,34.05], 'EPSG:4326', 'EPSG:3857'),
+        zoom: 10
     })
 });
