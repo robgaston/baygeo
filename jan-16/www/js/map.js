@@ -19,6 +19,15 @@ var map = new ol.Map({
     loadTilesWhileInteracting: true,
 });
 
+var featureSelect = new ol.interaction.Select();
+map.addInteraction(featureSelect);
+featureSelect.on('select', function (e) {
+    var features = e.target.getFeatures().getArray();
+    if (features.length > 0) {
+        document.location = 'resource_info.html?id=' + features[0].get('resource').id;
+    }
+});
+
 document.addEventListener('deviceready', function () {
     app.getResources(function(e,r) {
       var resources = app.parseResources(r.rows);
