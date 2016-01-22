@@ -50,6 +50,7 @@ var app = {
     sqlLiteSetup: function () {
         var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
         var sqlite = new SQLite('arches');
+        app.sqlite = sqlite;
 
         sqlite.open(function(err) {
           if (err) throw err;
@@ -58,8 +59,6 @@ var app = {
             console.log(res);
           });
         });
-
-        app.sqlite = sqlite;
     },
     addHplaResource: function(id) {
         $.get('http://historicplacesla.org/entities/' + id, function (d) {
