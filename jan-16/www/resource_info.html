@@ -1,3 +1,139 @@
-<div id="deviceready" class="blink">
-    <a href="map.html">Back</a>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/nifty.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        
+        <title>Arches Mobile App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <a type="button"  href="map.html" style="float:right;" class="next btn btn-primary btn-labeled fa fa-plus">Back</a>
+            </div>
+        </div>
+        <div class="boxed">
+
+            <!--CONTENT CONTAINER-->
+            <!--===================================================-->
+            <div class="container">
+
+
+                <div class="row">
+
+                    <!-- Card Settings -->
+                    <div class="" style="">
+
+                        <!-- Settings Container -->
+                        <div class="" style="height: 100vh; background: #49596A; color: #fff; border-right: 1px solid #ddd; padding: 0px; overflow-y: scroll;">
+
+                            <!-- Settings -->
+                            <div class="">
+
+                                <!-- Widget Information -->
+                                <hr class="section-division-dark" style="margin-left: 0px; margin-top: 15px;">
+                                <div class="" style="padding: 0 20px 20px 10px;">
+
+                                    <button id="address-add" type="button" style="float:right;" class="next btn btn-primary btn-labeled fa fa-plus">Edit</button>
+                                    
+                                    <!-- Widget Settings -->
+                                    <div class="" style="padding-bottom: 5px;">
+                                        <h4 class="" style="font-size: 15px; font-weight: 400; margin-top: -10px; padding: 0 0 0 0;"> Resource Info </h4>
+
+                                        <!-- Label Text -->
+                                        <div class="" style="">
+                                            <div class="control-label">
+                                                Primary Name
+                                            </div>
+                                            <div class="col-sm-12 pad-no" style="margin-bottom: 15px; margin-top: 2px;">
+                                                <input type="text" placeholder="Enter label here..." data-bind="text: name">
+                                            </div>
+                                        </div>
+                                        <!-- End Label Text -->
+
+                                        <!-- Placeholder Text -->
+                                        <div class="" style="margin-top: 15px;">
+                                            <div class="control-label">
+                                                Resource Type
+                                            </div>
+                                            <div class="col-sm-12 pad-no" style="margin-bottom: 15px; margin-top: 2px;">
+                                                <input type="" placeholder="Enter placeholder here...">
+                                            </div>
+                                        </div>
+                                        <!-- End Placeholder Text -->
+
+                                        <!-- Input Mask -->
+                                        <div class="" style="margin-top: 15px;">
+                                            <div class="control-label">
+                                                Geometry
+                                            </div>
+                                            <div class="col-sm-12 pad-no" style="margin-bottom: 15px; margin-top: 2px;">
+                                                <textarea type="" rows="4" cols="50" placeholder="Enter mask here..." id="" class="" style="width: 100%; background: #3c4d5e; border-width: 0px; padding-left: 5px;">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <!-- End Input Mask -->
+
+                                    </div>
+                                    <!-- End Widget Settings -->
+
+                                </div>
+                                <!-- End Widget Information -->
+
+                            </div>
+                            <!-- End Settings -->
+
+                        </div>
+                        <!-- End Settings Container -->
+
+                    </div>
+                    <!-- End Card Settings -->
+
+                </div>
+            </div>
+            <!--===================================================-->
+            <!--END CONTENT CONTAINER-->
+            
+            <div class="app-footer-nav" style="">
+                <div class="" style="padding-left: 5px;">
+                    <a type="button" href="projects.html" class="btn btn-nav" style=""><i class="fa fa-cloud-download" style="font-size: 21px;"></i></a>
+                    <button class="btn btn-nav" style=""><i class="fa fa-user" style="font-size: 21px;"></i></button>
+                    <button class="btn btn-nav" style=""><i class="fa fa-cog" style="font-size: 21px;"></i></button>
+                </div>
+            </div>
+
+ 
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
+        <script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+        <script type="text/javascript">
+            var initpage = function(){
+                var resourceid = '';
+
+                // get data from db with resourceid
+
+                var data = {
+                    name = 'test',
+                    geometry = '',
+                    resourcetype = ''
+                }
+
+                ko.applyBindings(data);
+            }
+            initpage();
+
+        </script>
+    </body>
+</html>
