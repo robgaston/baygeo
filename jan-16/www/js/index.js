@@ -36,17 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
         app.sqlLiteSetup();
     },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    },
     sqlLiteSetup: function () {
         var SQLite = window.cordova.require('cordova-sqlite-plugin.SQLite');
         var sqlite = new SQLite('arches');
