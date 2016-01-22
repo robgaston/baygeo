@@ -72,14 +72,14 @@ var app = {
             var resource = resources[i];
             var jsonResource = JSON.parse(resource.json_string)
             var names = app.getEntities(jsonResource, 'NAME.E41');
-            for (var i = 0; i < names.length; i++) {
-                names[i] = names[i].value;
+            for (var j = 0; j < names.length; j++) {
+                names[j] = names[j].value;
             }
             var geometries = app.getEntities(jsonResource, 'SPATIAL_COORDINATES_GEOMETRY.E47');
-            for (var i = 0; i < geometries.length; i++) {
+            for (var k = 0; k < geometries.length; k++) {
                 parsedResources.push({
                     id: resource.resource_id,
-                    geom: geometries[i].value,
+                    geom: geometries[k].value,
                     name: names.join(', ')
                 });
             }
