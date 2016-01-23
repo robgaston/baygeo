@@ -6,6 +6,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" href="libs/ol.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="libs/ol3-geocoder.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -14,6 +15,10 @@
     </head>
     <body>
         <div id="map" class="map"></div>
+        <div id="popup" class="ol-popup">
+          <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+          <div id="popup-content"></div>
+        </div>
         <div class="app-footer-nav" style="">
             <div class="" style="padding-left: 5px;">
                 <a type="button" href="map.html" class="btn btn-nav" style=""><i class="fa fa-arrow-left" style="font-size: 21px;"></i></a>
@@ -22,7 +27,7 @@
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="libs/ol.js"></script>
-        <script type="text/javascript" src="libs/ol3-geocoder.js"></script>
+        <script type="text/javascript" src="libs/ol3-geocoder-debug.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.0.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/map.js"></script>

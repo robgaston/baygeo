@@ -71,9 +71,9 @@ geocoder.on('addresschosen', function(evt){
 * Popup
 **/
 var
-  container = doc.getElementById('popup'),
-  content = doc.getElementById('popup-content'),
-  closer = doc.getElementById('popup-closer'),
+  container = document.getElementById('popup'),
+  content = document.getElementById('popup-content'),
+  closer = document.getElementById('popup-closer'),
   overlay = new ol.Overlay({
     element: container,
     offset: [0, -40]
