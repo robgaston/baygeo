@@ -22,12 +22,19 @@ requires [nodejs](https://nodejs.org/en/download/)
 relevant sdks must be installed to run emulators: [ios](https://developer.apple.com/ios/), [android](http://developer.android.com/sdk/installing/index.html)
 
 ```sh
-npm install -g cordova ios-sim
 cd jan-16
-./project.sh
+npm install
 ```
 
 ### run
+
+run the ios simulator quickly with npm...
+
+```sh
+npm start
+```
+
+...or if you've installed cordova globally you can run it like so:
 
 ```sh
 cordova run <platform>
