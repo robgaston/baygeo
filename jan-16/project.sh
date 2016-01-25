@@ -34,6 +34,7 @@ show_help () {
 	message_info "    -n (--icons): Copies icon and splash screen images to platform directories."
 	message_info "    -p (--plugins): (Re)Installs all plugins."
 	message_info "    -u (--update): Update platform codebase, runs 'cordova prepare'."
+    message_info "    -b (--bower): Install bower components and create requirejs config."
 	message_info ""
 	message_info "Examples:"
 	message_info ""
@@ -51,6 +52,7 @@ plugins=0;
 icons=0;
 clean=0;
 update=0;
+bower=0;
 
 while :; do
 	case $1 in
@@ -76,6 +78,9 @@ while :; do
 		-u | --update)
 			update=1
 			;;
+        -b | --bower)
+			bower=1
+			;;
 		--) # End of all options
 			break
 			;;
@@ -92,7 +97,7 @@ while :; do
 	shift
 done
 
-if [[ $merge = 0 ]] && [[ $plugins = 0 ]] && [[ $icons = 0 ]] && [[ $clean = 0 ]] && [[ $update = 0 ]] ; then
+if [[ $merge = 0 ]] && [[ $plugins = 0 ]] && [[ $icons = 0 ]] && [[ $clean = 0 ]] && [[ $update = 0 ]]  && [[ $bower = 0 ]] ; then
 	# If no options specified then we're doing initialization.
 	init=1
 fi
@@ -101,6 +106,11 @@ fi
 # Clean
 
 if [[ $clean = 1 ]] ; then
+    if [[ -d "node_modules" ]] ; then
+        message_info "Removing 'node_modules' directory."
+        rm -rf node_modules
+    fi
+
 	if [[ -d "plugins" ]] ; then
 		message_info "Removing 'plugins' directory."
 		rm -rf plugins
@@ -110,9 +120,14 @@ if [[ $clean = 1 ]] ; then
 		message_info "Removing 'platforms' directory."
 		rm -rf platforms
 	fi
+
+    if [[ -d "www/js/components" ]] ; then
+		message_info "Removing 'www/js/components' directory."
+		rm -rf www/js/components
+	fi
 fi
 
-if [[ $merge = 0 ]] && [[ $plugins = 0 ]] && [[ $icons = 0 ]] && [[ $init = 0 ]] && [[ $update = 0 ]] ; then
+if [[ $merge = 0 ]] && [[ $plugins = 0 ]] && [[ $icons = 0 ]] && [[ $init = 0 ]] && [[ $update = 0 ]]  && [[ $bower = 0 ]] ; then
 	exit 0
 fi
 
@@ -208,8 +223,17 @@ if [[ $init = 1 ]] || [[ $plugins = 1 ]] ; then
 
     message_info "Adding Sqlite Plugin..."
     cordova plugin add cordova-sqlite-plugin
-    cordova plugin add cordova-sqlite-storage
 
+fi
+
+# ----
+# Install bower components
+if [[ $init = 1 ]] || [[ $bower = 1 ]] ; then
+    message_info "Installing bower components..."
+    bower install
+
+    message_info "Creating requirejs config file..."
+    bower-requirejs -c www/config.js
 fi
 
 # ----
