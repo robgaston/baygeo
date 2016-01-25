@@ -1,10 +1,6 @@
 {
-  "name": "jan-16",
-  "version": "0.0.0",
-  "homepage": "https://github.com/fargeo/hack-day",
-  "authors": [
-    "Rob Gaston <rgaston@fargeo.com>"
-  ],
+  "name": "fargeo-jan-16-hack",
+  "version": "0.1.0",
   "moduleType": [
     "amd"
   ],
@@ -13,7 +9,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    "www/js/components",
     "test",
     "tests"
   ],
