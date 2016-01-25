@@ -31,7 +31,7 @@ define(['js/app', 'ol3-bower'], function (app, ol3) {
             }
         });
 
-        app.getResources(function(e,r) {
+        app.getResources(function(r) {
             var resources = app.parseResources(r.rows);
             for (var i = 0; i < resources.length; i++) {
                 var format = new ol.format.WKT();

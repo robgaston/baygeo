@@ -19,6 +19,9 @@
     "ol3-bower": "~3.12.1",
     "knockout": "~3.4.0",
     "requirejs": "~2.1.22",
-    "font-awesome": "~4.5.0"
+    "font-awesome": "~4.5.0",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3",
+    "pouchdb": "~5.2.0"
   }
 }
