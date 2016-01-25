@@ -2,13 +2,15 @@
   "name": "fargeo-jan-16-hack",
   "version": "0.1.0",
   "scripts": {
-      "postinstall": "./project.sh",
-      "start": "cordova run ios"
+    "postinstall": "bower install && bower-requirejs -c www/config.js && ./project.sh",
+    "start": "cordova run ios"
   },
   "dependencies": {
-      "cordova": "^5.4.1"
+    "bower": "^1.7.2",
+    "bower-requirejs": "^1.2.0",
+    "cordova": "^5.4.1"
   },
   "devDependencies": {
-      "ios-sim": "^5.0.6"
+    "ios-sim": "^5.0.6"
   }
 }
