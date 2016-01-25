@@ -1,4 +1,4 @@
-define(["jquery", "cordova", "bootstrap"], function($, cordova) {
+define(["jquery", "knockout", "main-view", "cordova", "bootstrap"], function($, ko, mainView) {
     var jQuery = $;
     var app = {
         project: {
@@ -9,6 +9,9 @@ define(["jquery", "cordova", "bootstrap"], function($, cordova) {
 
         initialize: function() {
             app.sqlLiteSetup();
+            require([mainView], function (view) {
+                app.mainView = view;
+            });
         },
 
         sqlLiteSetup: function () {
@@ -67,6 +70,37 @@ define(["jquery", "cordova", "bootstrap"], function($, cordova) {
                 app.getEntities(child_entity, type, list);
             }
             return list;
+        },
+        getResourceById: function(id, callback) {
+            var data = {
+                name: '',
+                resourceid: '',
+                geometry: ''
+            };
+
+            app.sqlite.query('select * from resources where resource_id="' + id +'";', [], function (err, res) {
+                if (err) throw err;
+                if (res.rows.length > 0) {
+                    var resource = res.rows[0];
+                    var jsonResource = JSON.parse(resource.json_string);
+                    var names = app.getEntities(jsonResource, 'NAME.E41');
+                    var primaryName;
+                    for (var i = 0; i < names.length; i++) {
+                        for (var j = 0; j < names[i].child_entities.length; j++) {
+                            var child = names[i].child_entities[j];
+                            if (child.entitytypeid === "NAME_TYPE.E55" && child.label === "Primary") {
+                                primaryName = names[i]
+                            }
+                        }
+                    }
+                    var geom = app.getEntities(jsonResource, 'SPATIAL_COORDINATES_GEOMETRY.E47');
+                    data.name = ko.observable(primaryName.label);
+                    data.resourceid = id;
+                    data.geometry = geom[0].value;
+
+                }
+                callback(data);
+            });
         },
         updatePrimaryName: function (id, name) {
             app.sqlite.query('select * from resources where resource_id="' + id +'";', [], function (err, res) {

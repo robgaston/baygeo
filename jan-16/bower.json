@@ -22,6 +22,8 @@
     "bootstrap": "~3.3.6",
     "ol3-bower": "~3.12.1",
     "knockout": "~3.4.0",
-    "requirejs": "~2.1.22"
+    "requirejs": "~2.1.22",
+    "pouchdb": "~5.2.0",
+    "font-awesome": "~4.5.0"
   }
 }
