@@ -222,7 +222,7 @@ if [[ $init = 1 ]] || [[ $plugins = 1 ]] ; then
 	cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git
 
     message_info "Adding Sqlite Plugin..."
-    cordova plugin add cordova-sqlite-plugin
+    cordova plugin add cordova-sqlite-storage
 
 fi
 
