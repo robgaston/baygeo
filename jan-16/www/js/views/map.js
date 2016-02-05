@@ -53,7 +53,7 @@ define(['js/app', 'ol3-bower'], function (app, ol3) {
             lang: 'en',
             placeholder: 'Search for ...',
             limit: 5,
-            keepOpen: true
+            keepOpen: false
         });
         map.addControl(geocoder);
 
