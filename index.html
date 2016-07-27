@@ -1,6 +1,38 @@
 ---
 title: Document
 ---
-{% capture my-include %}{% include index.md %}{% endcapture %}
-{{ my-include | markdownify }}
-Test...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FarGeo Aug 2016 Hack Trip</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="client.js"></script>
+</head>
+<body>
+    <main class="container">
+        {% capture my-include %}{% include index.md %}{% endcapture %}
+        {{ my-include | markdownify }}
+        <div data-bind="drop: {value: addToTile}">
+            <strong>Goal 1, Tilestache:</strong>
+            <ul data-bind="foreach:tileTeam">
+                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+            </ul>
+            <div class="drop-target">Drag your name here to join!</div>
+        </div>
+        <div data-bind="drop: {value: addToClient}" style="margin-top:10px">
+            <strong>Goal 2, Mapbox GL:</strong>
+            <ul data-bind="foreach:clientTeam">
+                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+            </ul>
+            <div class="drop-target">Drag your name here to join!</div>
+        </div>
+        <div data-bind="drop: {value: unassign}" style="margin-top:10px">
+            <strong>Unassigned:</strong>
+            <ul data-bind="foreach:unassignedTeam">
+                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+            </ul>
+            <div class="drop-target">Unassign</div>
+        </div>
+    </main>
+</body>
+</html>
