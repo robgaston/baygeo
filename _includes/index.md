@@ -29,6 +29,7 @@ The broad goal of this hack trip is to prototype some upcoming Arches features.
 Unlike previous hack days, this time we will be hacking on the the Arches code base (inside of [a separate fork](https://github.com/fargeo/arches)).
 
 There are two main (related) target features, and one stretch goal:
+
 1. Integrate a tile server solution into Arches using **[tilezen/TileStache](https://github.com/tilezen/TileStache)**.  [This gist](https://gist.github.com/rburhum/4559323) may be helpful in integrating with Django.  The solution should include support for:
     - serving custom imagery
     - generating image tiles of arches resource data (GeoJSON stored in `tiles`) probably using [mapnik](http://mapnik.org/)
