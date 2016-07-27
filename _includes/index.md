@@ -54,6 +54,7 @@ At the end of the trip, the group will evaulate the viability of merging any cod
 ## Preparation
 
 Please do the following before arriving:
+
 - re-read this page (it's being updated daily)
 - join a team below
 - clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally and set it up as you normally would
