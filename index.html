@@ -10,8 +10,8 @@ title: Document
 </head>
 <body>
     <main class="container">
-        {% capture my-include %}{% include index.md %}{% endcapture %}
-        {{ my-include | markdownify }}
+        {% capture main-include %}{% include index.md %}{% endcapture %}
+        {{ main-include | markdownify }}
         <div data-bind="drop: {value: addToTile}">
             <strong>Goal 1, Tilestache:</strong>
             <ul data-bind="foreach:tileTeam">
@@ -33,6 +33,8 @@ title: Document
             </ul>
             <div class="drop-target">Unassign</div>
         </div>
+        {% capture food-include %}{% include food.md %}{% endcapture %}
+        {{ food-include | markdownify }}
     </main>
 </body>
 </html>
