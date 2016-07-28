@@ -42,27 +42,6 @@ There are two main (related) target features, and one stretch goal:
     - storing 3d geometry data in Arches `tiles`
     - displaying 3d geometries on a web map
 
-## Code organization
-
-Coding will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
-
-Each team will code in a separate branch, merging from each other as needed.
-
-At the end of the trip, the group will evaulate the viability of merging any code from these branches into `master`, and ultimately back into [`archesproject/arches`](https://github.com/archesproject/arches).
-
-## Preparation
-
-Please do the following before arriving:
-
-- re-read this page (it's being updated daily)
-- join a team below
-- clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally and set it up as you normally would
-- [install mapnik](http://mapnik.org/pages/downloads.html) (`brew update && brew install mapnik` on macOS)
-
-It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
-
-It also would be helpful if someone could prepare some mock resource data (`tiles`) to test serving up `tiles` (ie GeoJSON stored in a postgres JSON column) via the tile server.
-
 ## Teams
 
 Group should be split into two teams running on parallel tracks pushing towards goals 1 & 2.
@@ -78,3 +57,54 @@ If teams feel too large, we can establish a third team around goal 3 to break aw
 Members should also feel free to change team membership during the hack day with the agreement of other team members.
 
 Teams are as follows **(drag & drop your name onto a team to join)**:
+
+<div data-bind="drop: {value: addToTile}">
+    <strong>Goal 1, Tilestache:</strong>
+    <ul data-bind="foreach:tileTeam">
+        <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+    </ul>
+    <div class="drop-target">Drag your name here to join!</div>
+</div>
+<div data-bind="drop: {value: addToClient}" style="margin-top:10px">
+    <strong>Goal 2, Mapbox GL:</strong>
+    <ul data-bind="foreach:clientTeam">
+        <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+    </ul>
+    <div class="drop-target">Drag your name here to join!</div>
+</div>
+<div data-bind="drop: {value: unassign}" style="margin-top:10px">
+    <strong>Unassigned:</strong>
+    <ul data-bind="foreach:unassignedTeam">
+        <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
+    </ul>
+    <div class="drop-target">Unassign</div>
+</div>
+
+## Code organization
+
+Coding will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
+
+Each team will code in a separate branch, merging from each other as needed.
+
+At the end of the trip, the group will evaulate the viability of merging any code from these branches into `master`, and ultimately back into [`archesproject/arches`](https://github.com/archesproject/arches).
+
+## Preparation
+
+Please do the following before arriving:
+
+- re-read this page (it's being updated daily)
+- join a team above
+- clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally and set it up as you normally would
+- [install mapnik](http://mapnik.org/pages/downloads.html) (`brew update && brew install mapnik` on macOS)
+
+It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
+
+It also would be helpful if someone could prepare some mock resource data (`tiles`) to test serving up `tiles` (ie GeoJSON stored in a postgres JSON column) via the tile server.
+
+## Food
+
+🍴 | **Breakfast** | **Lunch/Dinner**
+--- | --- | ---
+**Walking** | [Bagelry](http://bagelrysantacruz.com/), [Caffe Pergolesi](http://www.theperg.com/), [Zachary's](http://www.zacharyssantacruz.com/), [Verve Coffee](http://vervecoffee.com/pages/locations-pacific-avenue) | [Hula's Island Grill](http://www.hulastiki.com/), Jack's Hamburgers, Pizza My Heart, [Pono Hawaiian Girll](http://www.ponohawaiiangrill.com/site/), [Zoccoli's](http://www.zoccolis.com/)
+**Driving** | [Kelly's French Bakery](http://www.kellysfrenchbakery.com/), [Cafe Brasil](http://cafebrasil.us/index.html) | [Seabright Brewery](http://seabrightbrewery.com/), [Betty's Burgers](http://www.bettyburgers.com/), [Santa Cruz Mountain Brewery](http://www.scmbrew.com/)
+{:.table}

@@ -12,29 +12,6 @@ title: Document
     <main class="container">
         {% capture main-include %}{% include index.md %}{% endcapture %}
         {{ main-include | markdownify }}
-        <div data-bind="drop: {value: addToTile}">
-            <strong>Goal 1, Tilestache:</strong>
-            <ul data-bind="foreach:tileTeam">
-                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
-            </ul>
-            <div class="drop-target">Drag your name here to join!</div>
-        </div>
-        <div data-bind="drop: {value: addToClient}" style="margin-top:10px">
-            <strong>Goal 2, Mapbox GL:</strong>
-            <ul data-bind="foreach:clientTeam">
-                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
-            </ul>
-            <div class="drop-target">Drag your name here to join!</div>
-        </div>
-        <div data-bind="drop: {value: unassign}" style="margin-top:10px">
-            <strong>Unassigned:</strong>
-            <ul data-bind="foreach:unassignedTeam">
-                <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
-            </ul>
-            <div class="drop-target">Unassign</div>
-        </div>
-        {% capture food-include %}{% include food.md %}{% endcapture %}
-        {{ food-include | markdownify }}
     </main>
 </body>
 </html>
