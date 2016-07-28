@@ -4,22 +4,22 @@
 
 ### Tuesday, August 2, 2016:
 - **12:00PM:** meet @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
-- **12:00-1:00PM:** [lunch 🍔🍴](#food-)
+- **12:00-1:00PM:** [lunch 🍔🍴](#food)
 - **1:00-4:00PM:** hack 💻
 - **4:00-5:00PM:** break, check in ➡️🚪 @ [house 🏠](https://www.google.com/maps?ion=1&espv=2&q=116+Cedar+Street,+Santa+Cruz,+CA&bav=on.2,or.r_cp.&biw=1920&bih=1102&dpr=2&um=1&ie=UTF-8&sa=X&ved=0ahUKEwj7456Ul5TOAhWE5oMKHZrhAfAQ_AUIBigB)
-- **5:00PM-?:** hack 🛠 & [dinner🍴](#food-)
+- **5:00PM-?:** hack 🛠 & [dinner🍴](#food)
 
 ### Wednesday, August 3, 2016:
 - **9:00AM-12:00PM:** hack ⌨️
-- **12:00-1:00PM:** [lunch 🍕🍴](#food-)
+- **12:00-1:00PM:** [lunch 🍕🍴](#food)
 - **1:00-4:00PM:** hack 🖥
 - **4:00-5:00PM:** break 😅
-- **5:00PM-?:** hack 🤘 & [dinner🍴](#food-)
+- **5:00PM-?:** hack 🤘 & [dinner🍴](#food)
 
 ### Thursday, August 4, 2016:
 - **9:00-11:00AM:** hack 📱
 - **11:00AM:** check out 🚪➡️
-- **11:00AM-3:00PM:** [lunch 🌮🍴](#food-), hack and debrief @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
+- **11:00AM-3:00PM:** [lunch 🌮🍴](#food), hack and debrief @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
 
 ## Goals 💯
 
