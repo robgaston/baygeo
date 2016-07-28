@@ -22,31 +22,39 @@
 - **11:00AM-3:00PM:** lunch 🌮🍴, hack and debrief @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
 
 ## Food
-Some food options. I'm not even going to include taquerias because there are a billion.
+
+Some food options.  I'm not even going to include taquerias because there are a billion.
+
 ### Walking
+
 **Breakfast**
-- [Bagelry] (http://bagelrysantacruz.com/)
-- [Caffe Pergolesi] (http://www.theperg.com/)
-- [Zachary's] (http://www.zacharyssantacruz.com/)
-- [Verve Coffee] (http://vervecoffee.com/pages/locations-pacific-avenue)
-    
+
+- [Bagelry](http://bagelrysantacruz.com/)
+- [Caffe Pergolesi](http://www.theperg.com/)
+- [Zachary's](http://www.zacharyssantacruz.com/)
+- [Verve Coffee](http://vervecoffee.com/pages/locations-pacific-avenue)
+
 **Lunch/Dinner**
-- [Hula's Island Grill] (http://www.hulastiki.com/)
+
+- [Hula's Island Grill](http://www.hulastiki.com/)
 - Jack's Hamburgers
 - Pizza My Heart
-- [Pono Hawaiian Girll] (http://www.ponohawaiiangrill.com/site/) -- why Santa Cruz has two Hawaiian places downtown is beyond me.
-- [Zoccoli's] (http://www.zoccolis.com/)
-    
-    
+- [Pono Hawaiian Girll](http://www.ponohawaiiangrill.com/site/) -- why Santa Cruz has two Hawaiian places downtown is beyond me.
+- [Zoccoli's](http://www.zoccolis.com/)
+
+
 ### Driving
+
 **Breakfast**
+
 - [Kelly's French Bakery](http://www.kellysfrenchbakery.com/)
-- [Cafe Brasil] (http://cafebrasil.us/index.html)
-    
+- [Cafe Brasil](http://cafebrasil.us/index.html)
+
 **Lunch/Dinner**
-- [Seabright Brewery] (http://seabrightbrewery.com/)
-- [Betty's Burgers] (http://www.bettyburgers.com/)
-- [Santa Cruz Mountain Brewery] (http://www.scmbrew.com/)
+
+- [Seabright Brewery](http://seabrightbrewery.com/)
+- [Betty's Burgers](http://www.bettyburgers.com/)
+- [Santa Cruz Mountain Brewery](http://www.scmbrew.com/)
 
 ## Goals 💯
 
