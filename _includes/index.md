@@ -23,7 +23,7 @@
 
 ## Food
 
-Some food options.  I'm not even going to include taquerias because there are a billion.
+Some food options.  I'm not going to include taquerias because there are a billion.
 
 ### Walking
 
