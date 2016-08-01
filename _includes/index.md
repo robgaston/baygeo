@@ -19,7 +19,7 @@
 ### Thursday, August 4, 2016:
 - **9:00-11:00AM:** hack 📱
 - **11:00AM:** check out 🚪➡️
-- **11:00AM-3:00PM:** [lunch 🌮🍴](#food), hack and debrief @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
+- **11:00AM-1:00PM:** [lunch 🌮🍴](#food) and debrief (location TBD)
 
 ## Priorities
 
