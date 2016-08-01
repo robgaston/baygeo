@@ -115,6 +115,13 @@ Please do the following before arriving:
 
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
 
+Here's some more recommended reading:
+
+- [Mapbox GL JS fundamentals](https://www.mapbox.com/help/mapbox-gl-js-fundamentals/)
+- [Conversation about self hosting vector tiles](http://gis.stackexchange.com/questions/125037/self-hosting-mapbox-vector-tiles)
+- [Mapbox vector tiles specification](https://www.mapbox.com/vector-tiles/specification/)
+- [Awesome vector tiles](https://github.com/mapbox/awesome-vector-tiles)
+
 It also would be helpful if someone could prepare some mock resource data (`tiles`) to test serving up `tiles` (ie GeoJSON stored in a postgres JSON column) via the tile server.
 
 ## Food
