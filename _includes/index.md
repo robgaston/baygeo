@@ -1,4 +1,4 @@
-# <img src="https://cdn.hyperdev.com/us-east-1%3A4de1905f-9bcc-459c-abfd-32ebad23c54c%2F11509357.png" alt="Drawing" style="width: 100px; margin-right:10px;"/> 2016 Hack Trip: Santa Cruz, CA 🏖
+# <img src="https://cdn.hyperdev.com/us-east-1%3A4de1905f-9bcc-459c-abfd-32ebad23c54c%2F11509357.png" style="width: 100px; margin-right:10px;"/> 2016 Hack Trip: Santa Cruz, CA 🏖
 
 ## Schedule: August 2-4, 2016
 
@@ -84,6 +84,8 @@ Teams are as follows **(drag & drop your name onto a team to join)**:
 
 Coding will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
 
+Instead of cloning the `fargeo/arches` fork, it is probably much easier to just change remote on your existing arches (commands below under 'Preparation').
+
 Each team will code in a separate branch, merging from each other as needed.
 
 At the end of the trip, the group will evaulate the viability of merging any code from these branches into `master`, and ultimately back into [`archesproject/arches`](https://github.com/archesproject/arches).
@@ -94,7 +96,9 @@ Please do the following before arriving:
 
 - re-read this page (it's being updated daily)
 - join a team above
-- clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally and set it up as you normally would
+- change remote on your local `arches` repo to or clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally
+    - to change remote, run: `git remote set-url origin https://github.com/fargeo/arches.git`
+    - to clone, run: `git clone https://github.com/fargeo/arches.git` - you'll then need to set arches up as you normally would
 - [install mapnik](http://mapnik.org/pages/downloads.html) (`brew update && brew install mapnik` on macOS)
 
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
@@ -103,7 +107,7 @@ It also would be helpful if someone could prepare some mock resource data (`tile
 
 ## Food
 
-🍴 | **Breakfast** | **Lunch/Dinner**
+🍴 | **Breakfast/Coffee** | **Lunch/Dinner**
 --- | --- | ---
 **Walking** | [Bagelry](http://bagelrysantacruz.com/), [Caffe Pergolesi](http://www.theperg.com/), [Zachary's](http://www.zacharyssantacruz.com/), [Verve Coffee](http://vervecoffee.com/pages/locations-pacific-avenue) | [Hula's Island Grill](http://www.hulastiki.com/), Jack's Hamburgers, Pizza My Heart, [Pono Hawaiian Girll](http://www.ponohawaiiangrill.com/site/), [Zoccoli's](http://www.zoccolis.com/)
 **Driving** | [Kelly's French Bakery](http://www.kellysfrenchbakery.com/), [Cafe Brasil](http://cafebrasil.us/index.html) | [Seabright Brewery](http://seabrightbrewery.com/), [Betty's Burgers](http://www.bettyburgers.com/), [Santa Cruz Mountain Brewery](http://www.scmbrew.com/)
