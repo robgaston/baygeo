@@ -21,6 +21,17 @@
 - **11:00AM:** check out 🚪➡️
 - **11:00AM-3:00PM:** [lunch 🌮🍴](#food), hack and debrief @ [99 Bottles of Beer on the Wall 🍺](https://www.google.com/maps/place/99+Bottles+Of+Beer+On+The+Wall/@36.9735678,-122.0288055,17z/data=!3m1!4b1!4m5!3m4!1s0x808e402628a41b47:0x49097c3499bea3de!8m2!3d36.9735678!4d-122.0266168)
 
+## Priorities
+
+While hacking, please keep in mind these priorities, in order of importance:
+1. Listen and learn
+2. Share knowledge and techniques
+3. Gain new knowledge/insights
+4. Have fun/team building
+5. Produce usable code for Arches
+
+Priorities #1-4 are **essential**.  Priority #5 would be nice to have.
+
 ## Goals 💯
 
 The broad goal of this hack trip is to prototype some upcoming Arches features.
@@ -98,7 +109,7 @@ Please do the following before arriving:
 - join a team above
 - change remote on your local `arches` repo to or clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally
     - to change remote, run: `git remote set-url origin https://github.com/fargeo/arches.git`
-    - to clone, run: `git clone https://github.com/fargeo/arches.git` - you'll then need to set arches up as you normally would
+    - to clone, run: `git clone https://github.com/fargeo/arches.git` - you'll then need to set Arches up as you normally would
 - [install mapnik](http://mapnik.org/pages/downloads.html) (`brew update && brew install mapnik` on macOS)
 
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
