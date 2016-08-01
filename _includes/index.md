@@ -27,7 +27,7 @@ While hacking, please keep in mind these priorities, in order of importance:
 
 1. Listen and learn
 2. Share knowledge and techniques
-3. Gain new knowledge/insights
+3. Try new things and gain new knowledge/insights
 4. Have fun/team building
 5. Produce usable code for Arches
 
