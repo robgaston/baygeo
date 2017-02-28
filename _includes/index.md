@@ -95,6 +95,6 @@ Here's some more recommended reading:
 {:.table}
 
 ## Other Activities
-- [Wet'n Wild Water Park] (https://www.wetnwildpalmsprings.com)
-- [Joshua Tree] (https://www.nps.gov/jotr/index.htm)
-- [Indian Canyons Hike] (http://www.indian-canyons.com/palm.html)
+- [Wet'n Wild Water Park](https://www.wetnwildpalmsprings.com)
+- [Joshua Tree](https://www.nps.gov/jotr/index.htm)
+- [Indian Canyons Hike](http://www.indian-canyons.com/palm.html)
