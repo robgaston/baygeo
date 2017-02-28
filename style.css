@@ -3,7 +3,7 @@
 @import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
 
 body {
-  background-image: url('https://cdn.hyperdev.com/us-east-1%3A4de1905f-9bcc-459c-abfd-32ebad23c54c%2Fskulls.png');
+  background-image: url('img/topography.png');
   font-family: 'Ubuntu';
 }
 
@@ -18,12 +18,12 @@ body {
 }
 
 .container {
-  background: #f4f4dc;
+  background: #ffffff;
   border-radius: 31px;
   padding-bottom: 25px;
   margin-bottom: 25px;
   margin-top: 25px;
-  border: 2px #e9e9d1 solid;
+  border: 2px #f4f4f4 solid;
   color: #444433;
 }
 
