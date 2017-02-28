@@ -90,6 +90,6 @@ Here's some more recommended reading:
 
 🍴 | **Breakfast/Coffee** | **Lunch/Dinner**
 --- | --- | ---
-**Walking** | [LINKS HERE...](http://google.com/) | [LINKS HERE...](http://google.com/)
-**Driving** | [LINKS HERE...](http://google.com/) | [LINKS HERE...](http://google.com/)
+**Walking** | [Farm](http://www.farmpalmsprings.com) | [Johannes](http://www.johannesrestaurants.com)
+**Driving** | [La Quinta Resort (Mexican Place)](http://www.laquintaresort.com) | [LINKS HERE...](http://google.com/)
 {:.table}
