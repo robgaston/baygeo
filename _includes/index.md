@@ -3,16 +3,24 @@
 ## Schedule: March 5-8, 2017
 
 ### Sunday, March 5, 2017:
-- **12:00PM:** AGENDA ITEM
+- **4:00-9:00PM:** Arrive and settle in, discuss goal #1 over drinks and dinner 🍺
 
 ### Monday, March 6, 2017:
-- **12:00PM:** AGENDA ITEM
+- **9:00AM-12:00PM:** hack ⌨️
+- **12:00-1:00PM:** [lunch 🍴](#food)
+- **1:00-4:00PM:** hack 🖥
+- **4:00-5:00PM:** break 😅
+- **5:00PM-?:** hack 🛠 & [dinner🍴](#food)
 
 ### Tuesday, March 7, 2017:
-- **12:00PM:** AGENDA ITEM
+- **9:00AM-12:00PM:** hack 💻
+- **12:00-1:00PM:** [lunch 🍴](#food)
+- **1:00-4:00PM:** hack 📱
+- **4:00-5:00PM:** break 😅
+- **5:00PM-?:** hack 🤘 & [dinner🍴](#food)
 
 ### Wednesday, March 8, 2017:
-- **12:00PM:** AGENDA ITEM
+- **9:00AM-12:00PM:** Debrief and fly home ✈️
 
 ## Priorities
 
@@ -30,7 +38,7 @@ Priorities #1-4 are **essential**.  Priority #5 would be nice to have.
 
 The broad goal of this hack trip is to prototype some upcoming Arches features.  This will include features that the Arches web app will need to support the mobile app, as well as some features of the Arches mobile app.
 
-As with our last hack trip, we will be hacking on the the Arches code base (inside of [own special hacking fork](https://github.com/fargeo/arches)).
+As with our last hack trip, we will be hacking on the the Arches code base (inside of [own special hacking fork](https://github.com/fargeo/arches)).  We will also be building a new product, a mobile app, so we will be doing this work in a new repo, [`fargeo/palmsprings`](https://github.com/fargeo/palmsprings).
 
 Our development goals for this trip are as follows:
 
@@ -67,7 +75,7 @@ Members should also feel free to change team membership during the hack day with
 
 ## Code organization
 
-Coding will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
+Coding will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches) for Arches work and [`fargeo/palmsprings`](https://github.com/fargeo/palmsprings) for the mobile app work.
 
 Instead of cloning the `fargeo/arches` fork, it is probably much easier to just change remote on your existing arches (commands below under 'Preparation').
 
@@ -84,6 +92,7 @@ Please do the following before arriving:
 - change remote on your local `arches` repo to or clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally
     - to change remote, run: `git remote set-url origin https://github.com/fargeo/arches.git`
     - to clone, run: `git clone https://github.com/fargeo/arches.git` - you'll then need to set Arches up as you normally would
+- clone the [`fargeo/palmsprings`](https://github.com/fargeo/palmsprings) repo: `git clone https://github.com/fargeo/palmsprings.git`
 
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
 
