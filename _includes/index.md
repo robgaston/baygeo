@@ -28,37 +28,42 @@ Priorities #1-4 are **essential**.  Priority #5 would be nice to have.
 
 ## Goals 💯
 
-The broad goal of this hack trip is to prototype some upcoming Arches features.
+The broad goal of this hack trip is to prototype some upcoming Arches features.  This will include features that the Arches web app will need to support the mobile app, as well as some features of the Arches mobile app.
 
 As with our last hack trip, we will be hacking on the the Arches code base (inside of [own special hacking fork](https://github.com/fargeo/arches)).
 
 Our development goals for this trip are as follows:
 
-1. BROAD GOAL:
-    - DETAILS
-    - DETAILS
+1. Choose the most promising mobile development platform to hack with.
+    - Candidates include:
+        - [Cordova](https://cordova.apache.org/docs/en/latest/)
+        - [Cordova & Meteor](https://www.meteor.com/articles/build-mobile-applications-with-meteor) (or other framework)
+        - [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
+        - [NativeScript](https://www.nativescript.org/)
+        - Others?
+    - Criteria for selection should not be solely what seems most immediately viable, but should also consider the products long term potential as well as "coolness"/"fun" 😎
+2. Create a service in Arches to return a Resource Model for the mobile app
+    - Should include all related information required to generate a form on the mobile application
+    - Should brainstorm other services that may aid mobile app
+3. Create a simple mobile application to render Arches Resource Model form
+    - Will use selected mobile development platform
+    - Should first create basic application scaffold and a main page
+    - Will query Arches service referenced in goal #2 to gather information on a given Resource Model
+    - Use the response from Arches to generate a Resource Model form, starting with a single card
+    - Stretch goals would include:
+        - Saving a resource instance
+        - Editing a resource instance
+        - Rendering a resource instance report
 
 ## Teams
 
-Group should be split into two teams running on parallel tracks pushing towards goals 1 & 2.
-
-Hacking should be done in 1-2 hour sprints with teams checking in for 5-10 minutes between each sprint.
+Group should be split into two teams working in 1-2 hour sprints on a given task. Teams will check in for 5-15 minutes between each sprint to see where things are at and plan next tasks.
 
 Teams should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
 
 If teams feel too large, we can establish a third team around goal 3 to break away from the other two teams.
 
 Members should also feel free to change team membership during the hack day with the agreement of other team members.
-
-Teams are as follows **(drag & drop your name onto a team to join)**:
-
-<div data-bind="drop: {value: unassign}" style="margin-top:10px">
-    <strong>Unassigned:</strong>
-    <ul data-bind="foreach:unassignedTeam">
-        <li data-bind="text:name, drag: {value: $data}" class="draggable"></li>
-    </ul>
-    <div class="drop-target">Unassign</div>
-</div>
 
 ## Code organization
 
@@ -82,9 +87,11 @@ Please do the following before arriving:
 
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
 
-Here's some more recommended reading:
-
-- [READING LINKS....](https://www.mapbox.com/help/mapbox-gl-js-fundamentals/)
+Here's some recommended reading:
+- [Cordova Getting Started Guide](https://cordova.apache.org/#getstarted)
+- [Building Mobile Apps with Meteor](https://www.meteor.com/articles/build-mobile-applications-with-meteor)
+- [React Native Getting Started Guide](https://facebook.github.io/react-native/docs/getting-started.html)
+- [NativeScript Getting Started Guide](http://docs.nativescript.org/tutorial/chapter-0)
 
 ## Food
 
