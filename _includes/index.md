@@ -106,6 +106,11 @@ Here's some recommended reading:
 
 🍴 | **Breakfast/Coffee** | **Lunch/Dinner**
 --- | --- | ---
-**Walking** | [LINKS HERE...](http://google.com/) | [LINKS HERE...](http://google.com/)
-**Driving** | [LINKS HERE...](http://google.com/) | [LINKS HERE...](http://google.com/)
+**Walking** | [LINKS HERE...](http://google.com/) | [Farm](http://www.farmpalmsprings.com), [Johannes](http://www.johannesrestaurants.com)
+**Driving** | [LINKS HERE...](http://google.com/) | [Adobe Grill](http://www.laquintaresort.com/dine/adobe-grill/)
 {:.table}
+
+## Other Activities
+- [Wet'n Wild Water Park](https://www.wetnwildpalmsprings.com)
+- [Joshua Tree](https://www.nps.gov/jotr/index.htm)
+- [Indian Canyons Hike](http://www.indian-canyons.com/palm.html)
