@@ -69,7 +69,7 @@ Group should be split into two teams working in 1-2 hour sprints on a given task
 
 Teams should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
 
-If teams feel too large, we can establish a third team around goal 3 to break away from the other two teams.
+If teams feel too large, we can establish a third team to break away from the other two teams.
 
 Members should also feel free to change team membership during the hack day with the agreement of other team members.
 
