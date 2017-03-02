@@ -114,3 +114,4 @@ Here's some recommended reading:
 - [Wet'n Wild Water Park](https://www.wetnwildpalmsprings.com)
 - [Joshua Tree](https://www.nps.gov/jotr/index.htm)
 - [Indian Canyons Hike](http://www.indian-canyons.com/palm.html)
+- [Palm Springs Tram](http://www.pstramway.com)
