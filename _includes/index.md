@@ -48,6 +48,7 @@ Our development goals for this trip are as follows:
         - [Cordova & Meteor](https://www.meteor.com/articles/build-mobile-applications-with-meteor) (or other framework)
         - [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
         - [NativeScript](https://www.nativescript.org/)
+        - [Ionic](http://ionicframework.com/)
         - Others?
     - Criteria for selection should not be solely what seems most immediately viable, but should also consider the products long term potential as well as "coolness"/"fun" 😎
 2. Create a service in Arches to return a Resource Model for the mobile app
