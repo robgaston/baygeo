@@ -108,7 +108,7 @@ Here's some recommended reading:
 🍴 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
 --- | --- | --- | ---
 **Walking** | [Workshop Kitchen](http://www.workshoppalmsprings.com) | [Farm](http://www.farmpalmsprings.com), [Johannes](http://www.johannesrestaurants.com), [Workshop Kitchen](http://www.workshoppalmsprings.com) | [Bootlegger](http://www.bootleggertiki.com)
-**Driving** | [LINKS HERE...](http://google.com/) | [Adobe Grill](http://www.laquintaresort.com/dine/adobe-grill/) | [Bar](http://www.barwastaken.com)
+**Driving** | | [Adobe Grill](http://www.laquintaresort.com/dine/adobe-grill/) | [Bar](http://www.barwastaken.com)
 {:.table}
 
 ## Other Activities
