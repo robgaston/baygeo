@@ -3,8 +3,24 @@
 @import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
 
 body {
-  background-image: url('img/topography.png');
+  background-image: url('img/symphony.png');
   font-family: 'Ubuntu';
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;   
+  width: 100%;
+  height: 100%;
+  background-image: url('img/doodles.png');
+  animation: animatedBackground 100s linear infinite;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .drop-target {
@@ -33,4 +49,9 @@ body {
         width: 300px;
         margin: -210px 0 0 -150px;
     }
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 100%; }
 }
