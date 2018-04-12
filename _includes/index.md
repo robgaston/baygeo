@@ -1,25 +1,25 @@
-# <img src="https://cdn.hyperdev.com/us-east-1%3A4de1905f-9bcc-459c-abfd-32ebad23c54c%2F11509357.png" style="width: 100px; margin-right:10px;"/> March 2017 Hack Trip: Palm Springs, CA 🌴
+# <img src="img/fargeo.png" style="width: 100px; margin-right:10px;"/> April 2018 Hack Trip: South Lake Tahoe 🏔
 
-## Schedule: March 5-8, 2017
+## Schedule: April 22-25, 2018
 
-### Sunday, March 5, 2017:
+### Sunday, April 22, 2018:
 - **4:00-9:00PM:** Arrive and settle in, discuss goal #1 over drinks and dinner 🍺
 
-### Monday, March 6, 2017:
+### Monday, April 23, 2018:
 - **9:00AM-12:00PM:** hack ⌨️
 - **12:00-1:00PM:** [lunch 🍴](#food)
 - **1:00-4:00PM:** hack 🖥
 - **4:00-5:00PM:** break 😅
 - **5:00PM-?:** hack 🛠 & [dinner🍴](#food)
 
-### Tuesday, March 7, 2017:
+### Tuesday, April 24, 2018:
 - **9:00AM-12:00PM:** hack 💻
 - **12:00-1:00PM:** [lunch 🍴](#food)
 - **1:00-4:00PM:** hack 📱
 - **4:00-5:00PM:** break 😅
 - **5:00PM-?:** hack 🤘 & [dinner🍴](#food)
 
-### Wednesday, March 8, 2017:
+### Wednesday, April 25, 2018:
 - **9:00AM-12:00PM:** Debrief and fly home ✈️
 
 ## Priorities
@@ -30,7 +30,7 @@ While hacking, please keep in mind these priorities, in order of importance:
 2. Share knowledge and techniques
 3. Try new things and gain new knowledge/insights
 4. Have fun/team building
-5. Produce usable code for Arches
+5. Produce usable code or demos
 
 Priorities #1-4 are **essential**.  Priority #5 would be nice to have.
 
@@ -89,7 +89,6 @@ Following the trip, the Arches team will evaluate the value and viability of mer
 Please do the following before arriving:
 
 - re-read this page (it's being updated daily)
-- join a team above
 - change remote on your local `arches` repo to or clone the [`fargeo/arches` fork](https://github.com/fargeo/arches) locally
     - to change remote, run: `git remote set-url origin https://github.com/fargeo/arches.git`
     - to clone, run: `git clone https://github.com/fargeo/arches.git` - you'll then need to set Arches up as you normally would
@@ -98,21 +97,15 @@ Please do the following before arriving:
 It's suggested that you read up a bit on the relevant technologies for the team that you'll be working on (see links above).
 
 Here's some recommended reading:
-- [Cordova Getting Started Guide](https://cordova.apache.org/#getstarted)
-- [Building Mobile Apps with Meteor](https://www.meteor.com/articles/build-mobile-applications-with-meteor)
-- [React Native Getting Started Guide](https://facebook.github.io/react-native/docs/getting-started.html)
-- [NativeScript Getting Started Guide](http://docs.nativescript.org/tutorial/chapter-0)
+- ???
 
-## Food
+## Food & Drinks
 
-🍴 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
+🍴&🍻 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
 --- | --- | --- | ---
-**Walking** | [Workshop Kitchen](http://www.workshoppalmsprings.com) | [Farm](http://www.farmpalmsprings.com), [Johannes](http://www.johannesrestaurants.com), [Workshop Kitchen](http://www.workshoppalmsprings.com) | [Bootlegger](http://www.bootleggertiki.com)
-**Driving** | | [Adobe Grill](http://www.laquintaresort.com/dine/adobe-grill/) | [Bar](http://www.barwastaken.com)
+**Walking** | ??? | ??? | ???
+**Driving** | ??? | ??? | ???
 {:.table}
 
 ## Other Activities
-- [Wet'n Wild Water Park](https://www.wetnwildpalmsprings.com)
-- [Joshua Tree](https://www.nps.gov/jotr/index.htm)
-- [Indian Canyons Hike](http://www.indian-canyons.com/palm.html)
-- [Palm Springs Tram](http://www.pstramway.com)
+???
