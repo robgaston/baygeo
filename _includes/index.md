@@ -103,7 +103,7 @@ Please do the following before arriving:
 🍴&🍻 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
 --- | --- | --- | ---
 **Walking** | ??? | [Himmel Haus](https://www.himmelhausslt.com),??? | [Himmel Haus](https://www.himmelhausslt.com),,???
-**Driving** | ??? | ??? | ???
+**Driving** | ??? | [MacDuffs](http://macduffspub.com), ???| ???
 {:.table}
 
 ## Other Activities
