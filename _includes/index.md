@@ -47,11 +47,29 @@ The goal of this hack trip will be to jointly develop a new Arches package.  Goi
 
 Along the way, keep in mind that this is an opportunity to gain a broader understanding of Arches as well as share your unique knowledge of Arches with your fellow developers.  We should also strive to capture potential improvements and enhancements to Arches as tickets in [GitHub](https://github.com/archesproject/arches).
 
-The use case that we will be targeting in this hack trip will be address management, similar to the San Francisco EAS.  We should strive to make this exercise as real-world as possible, therefore, we should plan to use real SF address, parcel and street data in our efforts.
+The use case that we will be targeting in this hack trip will be address management, similar to the San Francisco EAS.  We should strive to make this exercise as real-world as possible, therefore, we should plan to use real SF address, parcel and street data in our efforts:
+- [addresses with units](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Addresses-with-Units-Enterprise-Addressing-System-/dxjs-vqsy)
+- [parcels](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Recorded-Parcel-Geography-with-Transaction-Date-Hi/3iun-6we5)
+- [street centerlines](https://data.sfgov.org/Geographic-Locations-and-Boundaries/San-Francisco-Basemap-Street-Centerlines/7hfy-8sz8)
+- [street names](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Street-Names/6d9h-4u5v)
+
+The goal will be to develop an Arches package that will allow for the management of address data (including units) as resource instances and the integration thereof with related GIS entities, specifically parcels and streets.  Parcels and streets would ideally be represented in an external system (such as ESRI's cloud-based solution) that Arches could directly integrate with.  If this is deemed to not be feasible within the scope of our hack trip, we can instead opt to somehow host these data locally (for example, in PostGIS) for use in Arches.
+
+There are at least three tracks that we can structure our work around:
+- data modeling and import
+- development of datatypes, widgets, and functions
+- visualization of data, esp. on the mapping interfaces (search and editing)
+
+Alternatively, we might organize ourselves instead around management of individual entities (and the development of related datatypes, widgets, etc):
+- parcels
+- streets
+- addresses and units
+
+A great outcome of this effort would be a live demo of the resultant package on the web that could be used for testing and demo purposes.
 
 ## Teams
 
-Group should be split into three teams working in 1-2 hour sprints on a given task. Teams will check in for 5-15 minutes between each sprint to see where things are at and plan next tasks.
+Group should be split into two or more teams working in 1-2 hour sprints on a given task. Teams will check in for 5-15 minutes between each sprint to see where things are at and plan next tasks.
 
 Teams should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
 
