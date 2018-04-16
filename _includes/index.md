@@ -40,7 +40,7 @@ The goal of this hack trip will be to jointly develop a new Arches package.  Goi
 - identify problem areas or potential improvements in key Arches functionalities, including:
 	- package creation process
 	- development of datatypes, widgets and functions
-	- intergration with external systems
+	- integration with external systems
 - help individual developers gain a broader understanding of Arches (and Arches package development)
 - prototype integrations and/or use cases that could be helpful in demoing Arches
 - prototype a package that might actually be useful IRL
