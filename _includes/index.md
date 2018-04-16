@@ -59,7 +59,7 @@ Members should feel free to change team membership or reorganize teams as needed
 
 ## Code organization
 
-Coding will be done in branches of the [`fargeo/southlake`](https://github.com/fargeo/southlake).
+Coding will be done in branches of the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo.
 
 Each team will code in a separate branch, merging into `master` as needed.
 
