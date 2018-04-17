@@ -98,12 +98,12 @@ Please do the following before arriving:
 	- functions?
 	- integrations?
 
-## Food & Drinks
+## Food
 
 🍴&🍻 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
 --- | --- | --- | ---
-**Walking** | ??? | [Himmel Haus](https://www.himmelhausslt.com),??? | [Himmel Haus](https://www.himmelhausslt.com),,???
-**Driving** | ??? | [MacDuffs](http://macduffspub.com), ???| ???
+**Walking** | ??? | [Himmel Haus](https://www.himmelhausslt.com) | [Himmel Haus](https://www.himmelhausslt.com)
+**Driving** | ??? | [MacDuffs](http://macduffspub.com) | ???
 {:.table}
 
 ## Other Activities
