@@ -91,6 +91,12 @@ Please do the following before arriving:
 
 - re-read this page (it's being updated daily)
 - add or suggest food/drink places and/or activities (below)
+- change your arches repo remote to point to [`fargeo/arches`](https://github.com/fargeo/arches) and checkout the `southlake` branch:
+```
+git remote set-url origin git@github.com:fargeo/arches.git
+git fetch
+git checkout southlake
+```
 - clone the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo
 - create a new local project and load the `fargeo/southlake` package:
 ```
