@@ -93,11 +93,11 @@ Please do the following before arriving:
 - add or suggest food/drink places and/or activities (below)
 - clone the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo
 - create a new local project and load the southlake package:
-	```
-	arches-project create sltproject
-	cd sltproject
-	python manage.py packages -o load_package -s https://github.com/fargeo/southlake/archive/master.zip -db true
-	```
+```
+arches-project create sltproject
+cd sltproject
+python manage.py packages -o load_package -s https://github.com/fargeo/southlake/archive/master.zip -db true
+```
 - think about the address management use case in the context of Arches:
 	- how to model data?
 	- datatypes/widgets?
