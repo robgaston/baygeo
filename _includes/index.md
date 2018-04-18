@@ -92,7 +92,7 @@ Please do the following before arriving:
 - re-read this page (it's being updated daily)
 - add or suggest food/drink places and/or activities (below)
 - clone the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo
-- create a new local project and load the southlake package:
+- create a new local project and load the `fargeo/southlake` package:
 ```
 arches-project create sltproject
 cd sltproject
