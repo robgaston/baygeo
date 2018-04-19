@@ -43,7 +43,7 @@ The goal of this hack trip will be to jointly develop a new Arches package.  Goi
 	- integration with external systems
 - help individual developers gain a broader understanding of Arches (and Arches package development)
 - prototype integrations and/or use cases that could be helpful in demoing Arches
-- prototype a package that might actually be useful IRL
+- prototype a package that might actually be useful
 
 Along the way, keep in mind that this is an opportunity to gain a broader understanding of Arches as well as share your unique knowledge of Arches with your fellow developers.  We should also strive to capture potential improvements and enhancements to Arches as tickets in [GitHub](https://github.com/archesproject/arches).
 
@@ -83,7 +83,12 @@ Each team will code in a separate branch, merging into `master` as needed.
 
 Should we decide/need to do core Arches development, that work will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
 
-Instead of cloning the `fargeo/arches` fork, it is probably much easier to just change remote on your existing local arches repo.
+Instead of cloning the `fargeo/arches` fork, it is probably much easier to just [change remote](#preparation) on your existing local arches repo.
+
+After the trip, you can change your Arches repo's remote back with the following command:
+```
+git remote set-url origin git@github.com:archesproject/arches.git
+```
 
 ## Preparation
 
