@@ -72,7 +72,7 @@ A great outcome of this effort would be a live demo of the resultant package on 
 
 Group should be split into two or more teams working in 1-2 hour sprints on a given task. Teams will check in for 5-15 minutes between each sprint to see where things are at and plan next tasks.
 
-Teams should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
+Each team should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
 
 Members should feel free to change team membership or reorganize teams as needed during the hack day.
 
@@ -97,7 +97,7 @@ Please do the following before arriving:
 
 - re-read this page (it's being updated daily)
 - add or suggest food/drink places and/or activities (below)
-- change your arches repo remote to point to [`fargeo/arches`](https://github.com/fargeo/arches) and checkout the `southlake` branch:
+- change your arches repo remote to point to [`fargeo/arches`](https://github.com/fargeo/arches) and checkout the `southlake` branch by running the following:
 ```
 git remote set-url origin git@github.com:fargeo/arches.git
 git fetch
