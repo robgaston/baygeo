@@ -122,5 +122,5 @@ python manage.py packages -o load_package -s https://github.com/fargeo/southlake
 🍴&🍻 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
 --- | --- | --- | ---
 **Walking** | [Black Cabin Coffee](http://www.blackcabincoffee.com/) | [Himmel Haus](https://www.himmelhausslt.com) | [Himmel Haus](https://www.himmelhausslt.com)
-**Driving** |  | [MacDuffs](http://macduffspub.com) | 
+**Driving** |  | [MacDuffs](http://macduffspub.com), [Freshies Restaurant & Bar](http://freshiestahoe.com) | [Basecamp Beer Garden](https://www.yelp.com/biz/basecamp-beer-garden-south-lake-tahoe)
 {:.table}
