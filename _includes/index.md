@@ -115,6 +115,7 @@ python manage.py packages -o load_package -s https://github.com/fargeo/southlake
 	- datatypes/widgets?
 	- functions?
 	- integrations?
+- if possible, bring adapters and cables (esp. HDMI) to connect your laptop to house TVs 
 
 ## Food
 
