@@ -110,6 +110,11 @@ arches-project create sltproject
 cd sltproject
 python manage.py packages -o load_package -s https://github.com/fargeo/southlake/archive/master.zip -db true
 ```
+- load the reference data from SF (parcels & streets) locally from your `fargeo/southlake` repo:
+```
+cd source_data
+./load_reference_data.sh
+```
 - think about the address management use case in the context of Arches:
 	- how to model data?
 	- datatypes/widgets?
