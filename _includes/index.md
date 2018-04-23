@@ -88,7 +88,7 @@ Instead of cloning the `fargeo/arches` fork, it is probably much easier to just 
 
 After the trip, you can change your Arches repo's remote back with the following command:
 ```
-git remote set-url origin git@github.com:archesproject/arches.git
+git remote set-url origin https://github.com/archesproject/arches.git
 ```
 
 ## Preparation
@@ -99,7 +99,7 @@ Please do the following before arriving:
 - add or suggest food/drink places and/or activities (below)
 - change your arches repo remote to point to [`fargeo/arches`](https://github.com/fargeo/arches) and checkout the `southlake` branch by running the following:
 ```
-git remote set-url origin git@github.com:fargeo/arches.git
+git remote set-url origin https://github.com/fargeo/arches.git
 git fetch
 git checkout southlake
 ```
