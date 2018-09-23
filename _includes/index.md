@@ -1,131 +1,60 @@
-# <img src="img/fargeo.png" style="width: 100px; margin-right:10px;"/> April 2018 Hack Trip: South Lake Tahoe 🏔
+# September 2018, Publishing web maps and processing spatial data with modern JavaScript
 
-## Schedule: April 22-25, 2018
+## Schedule
 
-### Sunday, April 22, 2018:
-- **4:00-9:00PM:** Arrive and settle in, discuss our goals over drinks and dinner 🍺
+### Day 1, September 24
 
-### Monday, April 23, 2018:
-- **9:00AM-12:00PM:** hack ⌨️
-- **12:00-1:00PM:** [lunch 🍴](#food)
-- **1:00-4:00PM:** hack 🖥
-- **4:00-5:00PM:** break 😅
-- **5:00PM-?:** hack 🛠 & [dinner🍴](#food)
+- Install dependencies and setup accounts
+- fork & clone repository, update Mapbox GL token
+- Deploy your map to GitHub Pages
+- restyling basemaps in Mapbox Studio
 
-### Tuesday, April 24, 2018:
-- **9:00AM-12:00PM:** hack 💻
-- **12:00-1:00PM:** [lunch 🍴](#food)
-- **1:00-4:00PM:** hack 📱
-- **4:00-5:00PM:** break 😅
-- **5:00PM-?:** hack 🤘 & [dinner🍴](#food)
+### Day 2, October 1
 
-### Wednesday, April 25, 2018:
-- **9:00AM-12:00PM:** Debrief and head home 🚘
+- Acquire and visualize data
+- Geo-process data with TurfJS
+- Styling custom data
 
-## Priorities
+### Day 3, October 8
 
-While hacking, please keep in mind these priorities, in order of importance:
+- Add interactivity to map
+- Add legend and header
+- Share maps
 
-1. Listen and learn
-2. Share knowledge and techniques
-3. Try new things and gain new knowledge/insights
-4. Have fun/team building
-5. Produce usable code or demos
+## Getting Started
+Install the following dependencies:
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/en/docs/install)
 
-Priorities #1-4 are **essential**.  Priority #5 would be nice to have.
+You'll also need a Git client & text editor; if you don't have those, then you should also install the following:
+- [Atom](https://atom.io)
 
-## Goals 💯
+You'll also want to [sign-up for Mapbox services here](https://www.mapbox.com/signup/) and, if you haven't already, [create a GitHub account](https://github.com).
 
-The goal of this hack trip will be to jointly develop a new Arches package.  Going through this process should help us:
-- identify problem areas or potential improvements in key Arches functionalities, including:
-	- package creation process
-	- development of datatypes, widgets and functions
-	- integration with external systems
-- help individual developers gain a broader understanding of Arches (and Arches package development)
-- prototype integrations and/or use cases that could be helpful in demoing Arches
-- prototype a package that might actually be useful
+Now you can fork & clone [`rgaston/new_map`](https://github.com/rgaston/new_map) to start building your own web map.
 
-Along the way, keep in mind that this is an opportunity to gain a broader understanding of Arches as well as share your unique knowledge of Arches with your fellow developers.  We should also strive to capture potential improvements and enhancements to Arches as tickets in [GitHub](https://github.com/archesproject/arches).
+After cloning the repo, you'll need to insert your Mapbox public access token ([which can be found here](https://www.mapbox.com/account/)) into `src/settings.json`.
 
-The use case that we will be targeting in this hack trip will be address management, similar to the San Francisco EAS.  We should strive to make this exercise as real-world as possible, therefore, we should plan to use real SF address, parcel and street data in our efforts:
-
-- **addresses with units**: [source](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Addresses-with-Units-Enterprise-Addressing-System-/dxjs-vqsy), [ESRI service](https://services8.arcgis.com/jXmOK21AXdxcpkCM/ArcGIS/rest/services/SF_Addresses/FeatureServer?token=uPzaLajXfjKRrDC7jfMIVzQGD8uC6zq_5rx6sb1mM00eE2xj79vRToVoYGr_5xT3IT_iXZ5iEOwLl_Vx3WpHa77gqDTteHT59nKUyf-ai-aETjv5Gs0hhBbOQcXdHx_OthR40wdv1NaJYnzPgLEg_YprU5BdT6Vmrr9elcEncjUuvxGK_pv2h8vcjkgbKLnZ4D1Cs3FEeOvxQ_cn32qsfwfmamu-uzproBfcbaqovJijCPbxjZTy8RsHIBVTjH0A)
-- **parcels**: [source](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Recorded-Parcel-Geography-with-Transaction-Date-Hi/3iun-6we5), [ESRI service](https://services8.arcgis.com/jXmOK21AXdxcpkCM/arcgis/rest/services/San_Francisco_Parcels_20180416/FeatureServer/0?token=tTzVkJ7RPpZmqmlxc7xVBaORWK8vIKQenSkbmK13OnDfIHNKaNCIaH3i6Nz1AUbdnqkEsz8HuA-QqYrndP4yyqgov0NUgabK3lOO19erL-YYPtbIhEzahbSeQ0wPkJx1TH7RVL-gJ9m3iBsV9Affr0NczrLunSdj6rsa1Kg4QI8fTWpdgj0VCy7FaANWggjI6b7kDATtb43W9-hHxmndcjEU9S7lBzCfTty1b4GnAF3dmYhoh4ZBLC-XpsLetKEJ)
-- **street centerlines**: [source](https://data.sfgov.org/Geographic-Locations-and-Boundaries/San-Francisco-Basemap-Street-Centerlines/7hfy-8sz8), [ESRI service](https://services8.arcgis.com/jXmOK21AXdxcpkCM/arcgis/rest/services/San_Francisco_Basemap_Street_Centerlines/FeatureServer/0?token=1eVJHuG13ctW2abP4MTfWdgbD0mrgiPZ6EvONk3YDAxIBScX36iwyTHGKklFTAVLxWaSXwhDbicB4en-6x_JYdanK5ZgYnX0C-qzDOnh6X4rcVVx1UoOhzs-xi2E2v00yagXR7NwhrPcl4e2KyEdQI_0_Zy_WGyIXsN-5g6MAPKvV3g-N4HYjDUounZUOcxZCdNBz6vmHd-KAFBZSfVEnSi_TFmYC1MaMGWP48lDZMZcqw183ciKwCB_Y9CMh-8U)
-- **street names**: [source](https://data.sfgov.org/Geographic-Locations-and-Boundaries/Street-Names/6d9h-4u5v)
-
-The goal will be to develop an Arches package that will allow for the management of address data (including units) as resource instances and the integration thereof with related GIS entities, specifically parcels and streets.  Parcels and streets would ideally be represented in an external system (such as ESRI's cloud-based solution) that Arches could directly integrate with.  If this is deemed to not be feasible within the scope of our hack trip, we can instead opt to somehow host these data locally (for example, in PostGIS) for use in Arches.
-
-There are at least three tracks that we can structure our work around:
-- data modeling and import
-- development of datatypes, widgets, and functions
-- visualization of data, esp. on the mapping interfaces (search and editing)
-
-Alternatively, we might organize ourselves instead around management of individual entities (and the development of related datatypes, widgets, etc):
-- parcels
-- streets
-- addresses and units
-
-A great outcome of this effort would be a live demo of the resultant package on the web that could be used for testing and demo purposes.
-
-## Teams
-
-Group should be split into two or more teams working in 1-2 hour sprints on a given task. Teams will check in for 5-15 minutes between each sprint to see where things are at and plan next tasks.
-
-Each team should strive to hack together, on a single machine at a time.  The driver role should rotate every 20-30 minutes and each member should drive at least once per sprint.
-
-Members should feel free to change team membership or reorganize teams as needed during the hack day.
-
-## Code organization
-
-Coding will be done in branches of the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo.
-
-Each team will code in a separate branch, merging into `master` as needed.
-
-Should we decide/need to do core Arches development, that work will be done in branches of the [`fargeo/arches` fork](https://github.com/fargeo/arches).
-
-Instead of cloning the `fargeo/arches` fork, it is probably much easier to just [change remote](#preparation) on your existing local arches repo.
-
-After the trip, you can change your Arches repo's remote back with the following command:
+You'll also need to install your package dependencies locally by running the following from the root directory of your cloned repository:
 ```
-git remote set-url origin https://github.com/archesproject/arches.git
+yarn install
 ```
 
-## Preparation
+## Development
+To run the app locally, run the following from the root directory of your cloned repository:
+```
+yarn run serve
+```
 
-Please do the following before arriving:
+The application should now be running at http://localhost:8080/
 
-- re-read this page (it's being updated daily)
-- add or suggest food/drink places and/or activities (below)
-- change your arches repo remote to point to [`fargeo/arches`](https://github.com/fargeo/arches) and checkout the `southlake` branch by running the following:
-```
-git remote set-url origin https://github.com/fargeo/arches.git
-git fetch
-git checkout southlake
-```
-- clone the [`fargeo/southlake`](https://github.com/fargeo/southlake) repo
-- load the reference data from SF (parcels & streets) locally from your `fargeo/southlake` repo:
-```
-cd source_data
-./load_reference_data.sh
-```
-- create a new local project and load the [`fargeo/southlake`](https://github.com/fargeo/southlake) package:
-```
-arches-project create sltproject
-cd sltproject
-python manage.py packages -o load_package -s https://github.com/fargeo/southlake/archive/master.zip -db true
-```
-- think about the address management use case in the context of Arches:
-	- how to model data?
-	- datatypes/widgets?
-	- functions?
-	- integrations?
-- if possible, bring adapters and cables (esp. HDMI) to connect your laptop to house TVs 
+Changes that you make to javascript and CSS files will be automatically refreshed!
 
-## Food
+## Building
+Before deploying, you must first build the website by running the following command from the root directory: 
+```
+yarn run build
+```
 
-🍴&🍻 | **Breakfast/Coffee** | **Lunch/Dinner** | **Booze**
---- | --- | --- | ---
-**Walking** | [Black Cabin Coffee](http://www.blackcabincoffee.com/) | [Himmel Haus](https://www.himmelhausslt.com) | [Himmel Haus](https://www.himmelhausslt.com)
-**Driving** |  | [MacDuffs](http://macduffspub.com), [Freshies Restaurant & Bar](http://freshiestahoe.com) | [Basecamp Beer Garden](https://www.yelp.com/biz/basecamp-beer-garden-south-lake-tahoe)
-{:.table}
+## Deployment
+To deploy your latest code to the web, simply build (as per above) then commit and push your local changes to the `master` branch in Github.
