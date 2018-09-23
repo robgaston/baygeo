@@ -1,4 +1,9 @@
-# September 2018, Publishing web maps and processing spatial data with modern JavaScript
+# GISEC Workshop, Fall 2018 
+# Publishing web maps and processing spatial data with modern JavaScript
+
+## Instructor
+
+[Rob Gaston](https://rgaston.com), web developer @ [Farallon Geograhpics](http://fargeo.com)
 
 ## Schedule
 
