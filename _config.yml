@@ -6,3 +6,4 @@ github_username:  rgaston
 
 # Build settings
 markdown: kramdown
+theme: jekyll-theme-hacker
