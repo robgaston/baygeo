@@ -2,22 +2,22 @@
 
 ## Schedule
 
-### Day 1, September 24
+### Day 1, 9/24: Publish your map
 
 - Install dependencies and setup accounts
-- fork & clone repository, update Mapbox GL token
+- Fork & clone repository, update Mapbox GL token
 - Deploy your map to GitHub Pages
-- restyling basemaps in Mapbox Studio
+- Styling basemaps in Mapbox Studio
 
-### Day 2, October 1
+### Day 2, 10/1: Add your own data
 
 - Acquire and visualize data
 - Geo-process data with TurfJS
 - Styling custom data
 
-### Day 3, October 8
+### Day 3, 10/8: Make it interactive
 
-- Add interactivity to map
+- Add hover popup to map
 - Add legend and header
 - Share maps
 
