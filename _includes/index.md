@@ -3,7 +3,7 @@
 
 ## Instructor
 
-[Rob Gaston](https://rgaston.com), web developer @ [Farallon Geograhpics](http://fargeo.com)
+[Rob Gaston](https://www.rgaston.com), web developer @ [Farallon Geograhpics](https://fargeo.com)
 
 ## Schedule
 
