@@ -3,7 +3,7 @@
 
 ## Instructor
 
-[Rob Gaston](https://www.rgaston.com), web developer @ [Farallon Geograhpics](https://fargeo.com)
+[Rob Gaston](https://www.rgaston.com), web developer @ [Farallon Geographics](https://fargeo.com)
 
 ## Schedule
 
@@ -36,7 +36,7 @@ You'll also need a Git client & text editor; if you don't have those, then you s
 
 You'll also want to [sign-up for Mapbox services here](https://www.mapbox.com/signup/) and, if you haven't already, [create a GitHub account](https://github.com).
 
-Now you can fork & clone [`rgaston/new_map`](https://github.com/rgaston/new_map) to start building your own web map.
+Now you can fork & clone [`robgaston/new_map`](https://github.com/robgaston/new_map) to start building your own web map.
 
 After cloning the repo, you'll need to insert your Mapbox public access token ([which can be found here](https://www.mapbox.com/account/)) into `src/settings.json`.
 
