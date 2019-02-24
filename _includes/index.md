@@ -1,4 +1,4 @@
-# GISEC Workshop, Fall 2018 
+# GISEC Workshop, February/March 2019
 # Publishing web maps and processing spatial data with modern JavaScript
 
 ## Instructor
@@ -7,20 +7,20 @@
 
 ## Schedule
 
-### Day 1, 9/24: Publish your map
+### Day 1, 2/25: Publish your map
 
 - Install dependencies and setup accounts
 - Fork & clone repository, update Mapbox GL token
 - Deploy your map to GitHub Pages
 - Styling basemaps in Mapbox Studio
 
-### Day 2, 10/1: Add your own data
+### Day 2, 3/4: Add your own data
 
 - Acquire and visualize data
 - Geo-process data with TurfJS
 - Styling custom data
 
-### Day 3, 10/8: Make it interactive
+### Day 3, 3/11: Make it interactive
 
 - Add hover popup to map
 - Add legend and header
